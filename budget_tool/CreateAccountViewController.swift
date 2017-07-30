@@ -7,13 +7,28 @@
 //
 
 import UIKit
+//import SwiftyJSON
+//import Alamofire
 
 class CreateAccountViewController: UIViewController {
-
+    @IBOutlet weak var LoginImage: UIImageView!
+    
+    @IBOutlet weak var accountUsername: UITextField!
+    @IBOutlet weak var accountName: UITextField!
+    @IBOutlet weak var accountPassword: UITextField!
+    @IBOutlet weak var accountEmail: UITextField!
+    
+    
+    @IBOutlet weak var SubmitButton: UIButton!
+    @IBOutlet weak var CancelButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        LoginImage.layer.cornerRadius = LoginImage.frame.width / 2;
+        LoginImage.clipsToBounds = true;
+        SubmitButton.layer.cornerRadius = 8
+        CancelButton.layer.cornerRadius = 8
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +36,36 @@ class CreateAccountViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+   
+    
+    
+    @IBAction func createNewAccount(_ sender: UIButton) {
+        guard let username = accountName.text else { return }
+        guard let name = accountName.text else { return }
+        guard let password = accountPassword.text else { return }
+        guard let email = accountEmail.text else { return }
+        
+        var fullNameArr = name.characters.split{$0 == " "}.map(String.init)
+        let firstName: String = fullNameArr[0]
+        let lastName: String? = fullNameArr.count > 1 ? fullNameArr[fullNameArr.count - 1] : nil
+        
+        var userDict = [String: Any]()
+        userDict["username"] = username
+        userDict["fname"] = firstName
+        userDict["lname"] = lastName
+        userDict["password"] = password
+        userDict["email"] = email
+        
+        /* 
+        Alamofire.request(APIConstants.User.createNewUser, method: .post, parameters: userDict, encoding: JSONEncoding.default, headers: nil)
+            .responseJSON { response in
+                if let json = response.result.value {
+                    print(json)
+                }
+        } 
+        */
+        
+        print(userDict)
     }
-    */
-
+   
 }

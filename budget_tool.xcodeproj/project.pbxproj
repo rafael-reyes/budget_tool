@@ -15,8 +15,8 @@
 		E7511F1A1F26FCF900E8756E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7511F181F26FCF900E8756E /* LaunchScreen.storyboard */; };
 		E7511F251F26FCF900E8756E /* budget_toolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7511F241F26FCF900E8756E /* budget_toolTests.swift */; };
 		E7511F301F26FCF900E8756E /* budget_toolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7511F2F1F26FCF900E8756E /* budget_toolUITests.swift */; };
-		E7511F3E1F2707FA00E8756E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7511F3D1F2707FA00E8756E /* LoginView.swift */; };
 		E7511F421F2717EA00E8756E /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7511F411F2717EA00E8756E /* CreateAccountViewController.swift */; };
+		E7511F441F2DA3D100E8756E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7511F431F2DA3D100E8756E /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +51,8 @@
 		E7511F2B1F26FCF900E8756E /* budget_toolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = budget_toolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7511F2F1F26FCF900E8756E /* budget_toolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = budget_toolUITests.swift; sourceTree = "<group>"; };
 		E7511F311F26FCF900E8756E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7511F3D1F2707FA00E8756E /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E7511F411F2717EA00E8756E /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		E7511F431F2DA3D100E8756E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +110,8 @@
 				E7511F161F26FCF900E8756E /* Assets.xcassets */,
 				E7511F181F26FCF900E8756E /* LaunchScreen.storyboard */,
 				E7511F1B1F26FCF900E8756E /* Info.plist */,
-				E7511F3D1F2707FA00E8756E /* LoginView.swift */,
 				E7511F411F2717EA00E8756E /* CreateAccountViewController.swift */,
+				E7511F431F2DA3D100E8756E /* LoginViewController.swift */,
 			);
 			path = budget_tool;
 			sourceTree = "<group>";
@@ -271,7 +271,7 @@
 				E7511F421F2717EA00E8756E /* CreateAccountViewController.swift in Sources */,
 				E7511F121F26FCF800E8756E /* SecondViewController.swift in Sources */,
 				E7511F0E1F26FCF800E8756E /* AppDelegate.swift in Sources */,
-				E7511F3E1F2707FA00E8756E /* LoginView.swift in Sources */,
+				E7511F441F2DA3D100E8756E /* LoginViewController.swift in Sources */,
 				E7511F101F26FCF800E8756E /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
